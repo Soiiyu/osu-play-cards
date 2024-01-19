@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #212126;
+  color: white;
+  align-items: center;
+}
+
+canvas {
+  display: block;
+  background-color: #101012;
+}
+
+#inputs {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+p {
+  margin: 0.2rem;
+}
+
+#toggle-manual {
+  user-select: none;
+}
+
+.invisible {
+  display: none;
+}
+
+a {
+  color: #c0a3ff;
+  font-size: smaller;
+  margin: 0.5rem;
+}
