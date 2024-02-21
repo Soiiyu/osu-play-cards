@@ -44,7 +44,7 @@ async function load() {
 	try {
 		if(scoreID.value.match(/^\d+$/)) scoreID.value = `https://osu.ppy.sh/scores/osu/${scoreID.value}`
 		scoreUrl = scoreID.value
-		if (!scoreUrl.match(/osu.ppy.sh\/scores\/osu\/\d+/)) return console.log('invalid score url')
+		if (!scoreUrl.match(/osu.ppy.sh\/scores\/osu\/\d+/) && !scoreUrl.match(/osu.ppy.sh\/scores\/\d+/)) return console.log('invalid score url')
 		const options = {
 			method: 'POST',
 			headers: {
